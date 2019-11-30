@@ -1967,9 +1967,24 @@ $ youtube-dl --dateafter 20000101 --datebefore 20091231
 
 ### How do I update youtube-dl?
 
+><span style="color:black">__________________________________________________  
+🍅 youtube-dl.exeを更新するにはどうすればよいですか？  
+</span>
+<br>
+
 If you've followed [our manual installation instructions](https://ytdl-org.github.io/youtube-dl/download.html), you can simply run `youtube-dl -U` (or, on Linux, `sudo youtube-dl -U`).
 
 If you have used pip, a simple `sudo pip install -U youtube-dl` is sufficient to update.
+
+><span style="color:black">__________________________________________________  
+🍅 Windowsの場合はコマンドラインから「youtube-dl.exe -U」を実行すれば自動で最新ファイルに更新してくれます。下記内容のバッチファイル（.bat）を作ってyoutube-dl.exeと同じ場所に置いておくと便利です。  
+<span style="color:#D73A49">%echo on</span>  
+<span style="color:#D73A49">youtube-dl.exe --version</span>  
+<span style="color:#D73A49">youtube-dl.exe -U</span>  
+<span style="color:#D73A49">youtube-dl.exe --version</span>  
+<span style="color:#D73A49">pause</span>  
+</span>
+<br>
 
 If you have installed youtube-dl using a package manager like *apt-get* or *yum*, use the standard system update mechanism to update. Note that distribution packages are often outdated. As a rule of thumb, youtube-dl releases at least once a month, and often weekly or even daily. Simply go to https://yt-dl.org to find out the current version. Unfortunately, there is nothing we youtube-dl developers can do if your distribution serves a really outdated version. You can (and should) complain to your distribution in their bugtracker or support forum.
 
