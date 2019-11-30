@@ -441,6 +441,15 @@ ERROR:（略）This video is private.【エラー：この動画は非公開で�
                                      into output file
     --no-mtime                       Do not use the Last-modified header to set
                                      the file modification time
+
+><span style="color:black">__________________________________________________  
+🍅 オプション  
+<span style="color:#D73A49">--no-mtime</span>  
+🍅 意味  
+ファイルの更新日をダウンロードした「いま」に設定したい場合に指定してください。このオプションを指定しないとサーバー上のオリジナル・ファイルの「Last-modified（最終更新日）」の情報がファイルの更新日に適用されます。  
+</span>
+<br>
+
     --write-description              Write video description to a .description
                                      file
     --write-info-json                Write video metadata to a .info.json file
