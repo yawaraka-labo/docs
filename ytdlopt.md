@@ -1978,11 +1978,11 @@ If you have used pip, a simple `sudo pip install -U youtube-dl` is sufficient to
 
 ><span style="color:black">__________________________________________________  
 🍅 Windowsの場合はコマンドラインから「youtube-dl.exe -U」を実行すれば自動で最新ファイルに更新してくれます。下記内容のバッチファイル（.bat）を作ってyoutube-dl.exeと同じ場所に置いておくと便利です。  
-<span style="color:#D73A49">%echo on</span>  
-<span style="color:#D73A49">youtube-dl.exe --version</span>  
-<span style="color:#D73A49">youtube-dl.exe -U</span>  
-<span style="color:#D73A49">youtube-dl.exe --version</span>  
-<span style="color:#D73A49">pause</span>  
+<span style="color:#D73A49">`%echo on`</span>  
+<span style="color:#D73A49">`youtube-dl.exe --version`</span>  
+<span style="color:#D73A49">`youtube-dl.exe -U`</span>  
+<span style="color:#D73A49">`youtube-dl.exe --version`</span>  
+<span style="color:#D73A49">`pause`</span>  
 </span>
 <br>
 
