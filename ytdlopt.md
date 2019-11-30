@@ -498,6 +498,15 @@ youtube-dl.exeにあらかじめ渡しておきたいデフォルトのオプシ
     -s, --simulate                   Do not download the video and do not write
                                      anything to disk
     --skip-download                  Do not download the video
+
+><span style="color:black">__________________________________________________  
+🍅 オプション  
+<span style="color:#D73A49">--skip-download</span>  
+🍅 意味  
+処理は行う。但し動画のダウンロードをスキップする。結果的に何もダウンロードされない。  
+</span>
+<br>
+
     -g, --get-url                    Simulate, quiet but print URL
     -e, --get-title                  Simulate, quiet but print title
     --get-id                         Simulate, quiet but print id
