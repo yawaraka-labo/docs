@@ -12,7 +12,7 @@ youtube-dl.exeに渡すオプションについて説明します。想定して
 
 1. youtube-dl.exe公式の取扱説明書（<a href="https://github.com/ytdl-org/youtube-dl/blob/master/README.md">youtube-dl/README</a> 英文）を全文引用します。引用する文書は現時点（2019-11-28）で最新のバージョン：<a href="https://github.com/ytdl-org/youtube-dl/blob/a6e6673e825f6225c3a316b164ddca03fd20b5d2/README.md">a6e6673</a> - Commits on Nov 4, 2019
 
-2. 全文引用に対して当方がとくに必要と思った部分にコメントを入れます。この際、英文を日本語に翻訳します。超意訳なので内容は無保証です。翻訳はGoogle機械翻訳に頼っています。誤訳の指摘を歓迎します：<a href="https://sites.google.com/view/yawaraka-labo/Contact">こちらまで</a>
+2. 全文引用に対して当方がとくに必要と思った部分にコメントを入れます。この際、英文を日本語に翻訳します。超意訳です。翻訳はGoogle機械翻訳に頼っています。誤訳の指摘を歓迎します：<a href="https://sites.google.com/view/yawaraka-labo/Contact">こちらまで</a>
 
 3. なるべくyoutube-dl.exeコマンドを実際に発行してその結果を記載します。記載したコマンドをコピペして実行すればどの環境でも同様の結果になると思うのでチュートリアルとしても利用できます。
 
