@@ -232,6 +232,15 @@ ERROR:（略）This video is private.【エラー：この動画は非公開で�
                                      configuration in ~/.config/youtube-
                                      dl/config (%APPDATA%/youtube-dl/config.txt
                                      on Windows)
+
+><span style="color:black">__________________________________________________  
+🍅 オプション  
+<span style="color:#D73A49">--ignore-config</span>  
+🍅 意味  
+youtube-dl.exeにあらかじめ渡しておきたいデフォルトのオプションを記述する構成ファイル読み込みたくないときは指定してください。構成ファイルに関しては後述の「CONFIGURATION」を参照。  
+</span>
+<br>
+
     --config-location PATH           Location of the configuration file; either
                                      the path to the config or its containing
                                      directory.
@@ -1306,6 +1315,15 @@ ffmpeg.exeまたはavconvの置き場所を指定。バイナリへのファイ�
 # CONFIGURATION
 
 You can configure youtube-dl by placing any supported command line option to a configuration file. On Linux and macOS, the system wide configuration file is located at `/etc/youtube-dl.conf` and the user wide configuration file at `~/.config/youtube-dl/config`. On Windows, the user wide configuration file locations are `%APPDATA%\youtube-dl\config.txt` or `C:\Users\<user name>\youtube-dl.conf`. Note that by default configuration file may not exist so you may need to create it yourself.
+
+><span style="color:black">__________________________________________________  
+🍅 youtube-dl.exeにあらかじめ渡しておきたいデフォルトのオプションがある場合は「%APPDATA%\youtube-dl\config.txt」あるは「C:\Users\ユーザー名\youtube-dl.conf」のどちらかに書いておけばいい。例えば次のように書いておく。  
+`-v`  
+`# この行はコメント`  
+`-i`  
+`--no-mtime`  
+</span>
+<br>
 
 For example, with the following configuration file youtube-dl will always extract the audio, not copy the mtime, use a proxy and save all videos under `Movies` directory in your home directory:
 ```
