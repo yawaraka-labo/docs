@@ -1198,7 +1198,7 @@ opusオリジナル音声から別の音声形式に変換（再エンコード�
 
 ><span style="color:black">__________________________________________________  
 🍅 オプション  
-<span style="color:#D73A49">（&ndash;と&mdash;）--audio-quality QUALITY</span>  
+<span style="color:#D73A49">（&ndash;と&mdash;）（&ndash;&ndash;）--audio-quality QUALITY</span>  
 🍅 意味  
 オプション「-x」と一緒に使う（はず）。音質を指定する（0～9）。0は最高音質。9は最低音質。既定値は5（中程度=128kbps程度）。  
 🍅 Note  
