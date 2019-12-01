@@ -418,7 +418,10 @@ youtube-dl.exeにあらかじめ渡しておきたいデフォルトのオプシ
 <span style="color:#D73A49">-a FILE</span>  
 <span style="color:#D73A49">--batch-file FILE</span>  
 🍅 意味  
-ダウンロードする動画のURLを記述したファイルを指定する。1行に1つのURLを記述する。行の先頭が「#」「;」「]」の文字で始まる場合はその行はコメントと見なされダウンロードされない。  
+ダウンロードする動画のURLを記述したファイルを指定する。1行に1つのURLを記述する。行の先頭が「#」「;」「]」の文字で始まる場合はその行はコメントと見なされダウンロードされない。以下は記入例。  
+`https://www.youtube.com/watch?v=RyIxykUGu9Q`  
+`# https://www.youtube.com/watch?v=zI7GbQaB9U4`  
+`https://www.youtube.com/watch?v=ELD6rW5N1SU`  
 </span>
 <br>
 
