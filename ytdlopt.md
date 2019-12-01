@@ -2017,7 +2017,7 @@ If you've followed [our manual installation instructions](https://ytdl-org.githu
 If you have used pip, a simple `sudo pip install -U youtube-dl` is sufficient to update.
 
 ><span style="color:black">__________________________________________________  
-🍅 Windowsの場合はコマンドラインから「`youtube-dl.exe -U`」を実行すれば自動で最新ファイルに更新してる。下記内容のバッチファイル（.bat）を作ってyoutube-dl.exeと同じ場所に置いておくと便利。  
+🍅 Windowsの場合はコマンドラインから「`youtube-dl.exe -U`」を実行すれば自動で最新のyoutube-dl.exeがダウンロードされローカルのyoutube-dl.exeが更新される。下記内容のバッチファイル（.bat）を作ってyoutube-dl.exeと同じ場所に置いておくと便利。  
 <span style="color:#D73A49">`%echo on`</span>  
 <span style="color:#D73A49">`youtube-dl.exe --version`</span>  
 <span style="color:#D73A49">`youtube-dl.exe -U`</span>  
