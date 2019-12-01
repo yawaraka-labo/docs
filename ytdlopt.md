@@ -1061,10 +1061,10 @@ ja vtt, ttml, srv3, srv2, srv1
 <span>(4) Deleting original file サンプル動画 #1 日英字幕付き｜f251｜.webm</span>  
 🍅 Note  
 結果とログから読み取れることは次の通り。  
-(1) youtube-dl.exeが「f251（DASH/opus音声のみ）.webm（動画コンテナ）」をダウンロード。  
-(2) ffprobe.exe（-show_streams）が「.webm」のストリーム情報を取得。  
-(3) ffmpeg.exe（-vn -acodec copy）が「.webm」のopus音声をコピーして「f251.opus（音声形式ファイル）」を生成。  
-(4) 「.webm」は不要になったので削除。  
+(1) youtube-dl.exeが「`f251`（DASH/opus音声のみ）`.webm`（動画コンテナ）」をダウンロード。  
+(2) ffprobe.exe（-show_streams）が「`.webm`」のストリーム情報を取得。  
+(3) ffmpeg.exe（-vn -acodec copy）が「`.webm`」のopus音声をコピーして「`f251.opus`（音声形式ファイル）」を生成。  
+(4) 「`.webm`」は不要になったので削除。  
 🍅 Note  
 opusオリジナル音声を抽出しているため再エンコードによる音質劣化はない。  
 </span>
@@ -1096,10 +1096,10 @@ opusオリジナル音声を抽出しているため再エンコードによる�
 <span>(4) Deleting original file サンプル動画 #1 日英字幕付き｜f251｜.webm</span>  
 🍅 Note  
 結果とログから読み取れることは次の通り。  
-(1) youtube-dl.exeが「f251（DASH/opus音声のみ）.webm（動画コンテナ）」をダウンロード。  
-(2) ffprobe.exe（-show_streams）が「.webm」のストリーム情報を取得。  
-(3) ffmpeg.exe（-vn -acodec aac）が「.webm」のopus音声をaac音声に変換して「f251.m4a（音声形式ファイル）」を生成。※「`-q:a 5`」はVBR（可変ビットレート）品質5（中程度=120kbps程度）の指定。「`-bsf:a aac_adtstoasc`」はAACエラー抑止の指定。  
-(4) 「.webm」は不要になったので削除。  
+(1) youtube-dl.exeが「`f251`（DASH/opus音声のみ）`.webm`（動画コンテナ）」をダウンロード。  
+(2) ffprobe.exe（-show_streams）が「`.webm`」のストリーム情報を取得。  
+(3) ffmpeg.exe（-vn -acodec aac）が「`.webm`」のopus音声をaac音声に変換して「`f251.m4a`（音声形式ファイル）」を生成。※「`-q:a 5`」はVBR（可変ビットレート）品質5（中程度=120kbps程度）の指定。「`-bsf:a aac_adtstoasc`」はAACエラー抑止の指定。  
+(4) 「`.webm`」は不要になったので削除。  
 🍅 Note  
 opusオリジナル音声から別の音声形式に変換（再エンコード）しているため音質は劣化する。変換処理に時間もかかる。  
 </span>
@@ -1119,12 +1119,12 @@ opusオリジナル音声から別の音声形式に変換（再エンコード�
 <span>(4) Deleting original file サンプル動画 #1 日英字幕付き｜f251｜.webm</span>  
 🍅 Note  
 結果とログから読み取れることは次の通り。  
-(1) youtube-dl.exeが「f251（DASH/opus音声のみ）.webm（動画コンテナ）」をダウンロード。  
-(2) ffprobe.exe（-show_streams）が「.webm」のストリーム情報を取得。  
-(3) ffmpeg.exe（-vn -acodec libmp3lame）が「.webm」のopus音声をmp3音声に変換して「f251.mp3（音声形式ファイル）」を生成。※「`-q:a 5`」はVBR（可変ビットレート）品質5（中程度=120kbps程度）の指定。  
-(4) 「.webm」は不要になったので削除。  
+(1) youtube-dl.exeが「`f251`（DASH/opus音声のみ）`.webm`（動画コンテナ）」をダウンロード。  
+(2) ffprobe.exe（-show_streams）が「`.webm`」のストリーム情報を取得。  
+(3) ffmpeg.exe（-vn -acodec libmp3lame）が「`.webm`」のopus音声をmp3音声に変換して「`f251.mp3`（音声形式ファイル）」を生成。※「`-q:a 5`」はVBR（可変ビットレート）品質5（中程度=120kbps程度）の指定。  
+(4) 「`.webm`」は不要になったので削除。  
 🍅 Note  
-次に説明するオプション「`--audio-quality`」を併用することで音質「0～9（最高～最低）」を指定できる。オプション「`--audio-quality`」の指定が省略された場合は既定値「5（中程度=120kbps程度）」の音質となる。  
+次に説明するオプション「`--audio-quality`」を併用することで音質『0～9（最高～最低）』を指定できる。オプション「`--audio-quality`」の指定が省略された場合は既定値『5（中程度=120kbps程度）』の音質となる。  
 🍅 Note  
 opusオリジナル音声から別の音声形式に変換（再エンコード）しているため音質は劣化する。変換処理に時間もかかる。  
 </span>
@@ -1144,10 +1144,10 @@ opusオリジナル音声から別の音声形式に変換（再エンコード�
 <span>(4) Deleting original file サンプル動画 #1 日英字幕付き｜f251｜.webm</span>  
 🍅 Note  
 結果とログから読み取れることは次の通り。  
-(1) youtube-dl.exeが「f251（DASH/opus音声のみ）.webm（動画コンテナ）」をダウンロード。  
-(2) ffprobe.exe（-show_streams）が「.webm」のストリーム情報を取得。  
-(3) ffmpeg.exe（-vn -acodec libmp3lame）が「.webm」のopus音声をmp3音声に変換して「f251.mp3（音声形式ファイル）」を生成。※「`-q:a 0`」はVBR（可変ビットレート）品質0（最高品質）の指定。  
-(4) 「.webm」は不要になったので削除。  
+(1) youtube-dl.exeが「`f251`（DASH/opus音声のみ）`.webm`（動画コンテナ）」をダウンロード。  
+(2) ffprobe.exe（-show_streams）が「`.webm`」のストリーム情報を取得。  
+(3) ffmpeg.exe（-vn -acodec libmp3lame）が「`.webm`」のopus音声をmp3音声に変換して「`f251.mp3`（音声形式ファイル）」を生成。※「`-q:a 0`」はVBR（可変ビットレート）品質0（最高品質）の指定。  
+(4) 「`.webm`」は不要になったので削除。  
 🍅 Note  
 opusオリジナル音声から別の音声形式に変換（再エンコード）しているため音質は劣化する。変換処理に時間もかかる。  
 </span>
@@ -1167,10 +1167,10 @@ opusオリジナル音声から別の音声形式に変換（再エンコード�
 <span>(4) Deleting original file サンプル動画 #1 日英字幕付き｜f251｜.webm</span>  
 🍅 Note  
 結果とログから読み取れることは次の通り。  
-(1) youtube-dl.exeが「f251（DASH/opus音声のみ）.webm（動画コンテナ）」をダウンロード。  
-(2) ffprobe.exe（-show_streams）が「.webm」のストリーム情報を取得。  
-(3) ffmpeg.exe（-vn -acodec libmp3lame）が「.webm」のopus音声をmp3音声に変換して「f251.mp3（音声形式ファイル）」を生成。※「`-q:a 9`」はVBR（可変ビットレート）品質9（最低品質）の指定。  
-(4) 「.webm」は不要になったので削除。  
+(1) youtube-dl.exeが「`f251`（DASH/opus音声のみ）.webm（動画コンテナ）」をダウンロード。  
+(2) ffprobe.exe（-show_streams）が「`.webm`」のストリーム情報を取得。  
+(3) ffmpeg.exe（-vn -acodec libmp3lame）が「`.webm`」のopus音声をmp3音声に変換して「`f251.mp3`（音声形式ファイル）」を生成。※「`-q:a 9`」はVBR（可変ビットレート）品質9（最低品質）の指定。  
+(4) 「`.webm`」は不要になったので削除。  
 🍅 Note  
 opusオリジナル音声から別の音声形式に変換（再エンコード）しているため音質は劣化する。変換処理に時間もかかる。  
 </span>
