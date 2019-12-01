@@ -1330,10 +1330,10 @@ You can configure youtube-dl by placing any supported command line option to a c
 
 ><span style="color:black">__________________________________________________  
 🍅 youtube-dl.exeにあらかじめ渡しておきたいデフォルトのオプションがある場合は「`%APPDATA%\youtube-dl\config.txt`」あるは「`C:\Users\ユーザー名\youtube-dl.conf`」のどちらかに書いておけばいい。例えば次のように書いておく。  
-`-v`  
-`# この行はコメント`  
-`-i`  
-`--no-mtime`  
+<span style="color:#D73A49">`-v`</span>  
+<span style="color:#D73A49">`# この行はコメント`</span>  
+<span style="color:#D73A49">`-i`</span>  
+<span style="color:#D73A49">`--no-mtime`</span>  
 </span>
 <br>
 
