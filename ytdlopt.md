@@ -886,7 +886,7 @@ WARNING: No subtitle format found matching "srt" for language ja, using vtt【�
 🍅 オプション  
 <span style="color:#D73A49">--write-auto-sub</span>  
 🍅 意味  
-動画に利用可能な自動翻訳字幕がある場合は自動翻訳字幕ファイルをダウンロードする。（YouTubeのみ）  
+動画に利用可能な自動翻訳字幕がある場合はダウンロードする。（YouTubeのみ）  
 </span>
 <br>
 
