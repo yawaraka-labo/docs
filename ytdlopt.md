@@ -417,6 +417,13 @@ youtube-dl.exeにあらかじめ渡しておきたいデフォルトのオプシ
 🍅 オプション  
 <span style="color:#D73A49">-a FILE</span>  
 <span style="color:#D73A49">&ndash;&ndash;batch-file FILE</span>  
+<span style="color:#D73A49">--batch-file FILE</span>  
+<span style="color:#D73A49">`&ndash;&ndash;`batch-file FILE</span>  
+<span style="color:#D73A49">`--`batch-file FILE</span>  
+<span style="color:#D73A49">`&ndash;&ndash;batch-file FILE`</span>  
+<span style="color:#D73A49">`--batch-file FILE`</span>  
+`<span style="color:#D73A49">&ndash;&ndash;batch-file FILE</span>`  
+`<span style="color:#D73A49">--batch-file FILE</span>`  
 🍅 意味  
 ダウンロードする動画のURLを記述したファイルを指定する。1行に1つのURLを記述する。行の先頭が「#」「;」「]」の文字で始まる場合はその行はコメントと見なされダウンロードされない。以下は記入例。  
 <span style="color:#D73A49">https://www.youtube.com/watch?v=RyIxykUGu9Q</span>  
