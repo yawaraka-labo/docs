@@ -2221,6 +2221,7 @@ Use the `-o` to specify an [output template](#output-template), for example `-o 
 🍅 結果  
 「`C:\my_work_folder`」に下記のファイルを取得。  
 <span style="color:green">サンプル動画 #1 日英字幕付き.webm</span>  
+（「`C:\my_work_folder`」が存在しない場合は自動で作成される）  
 </span>
 <br>
 
