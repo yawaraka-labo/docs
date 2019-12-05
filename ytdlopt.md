@@ -27,7 +27,7 @@ youtube-dl.exeに渡すオプションについて説明します。想定して
 - 再生リスト（上記三つの公開動画と一つの非公開動画で計四つの動画）  
 [https://www.youtube.com/playlist?list=PLDxMLtTVwpe4a7Add0eMKGjGP1oBK00Pw](https://www.youtube.com/playlist?list=PLDxMLtTVwpe4a7Add0eMKGjGP1oBK00Pw)
 
-これらサンプル動画（および含まれるコンテンツ）は当サイト（[やわらか実験室 - 動画をダウンロードするやつ](https://sites.google.com/view/yawaraka-labo/DougaDLG)）が自作したものです。ダウンロードのテスト用として自由に使ってください。永続的に残します。
+これらサンプル動画（および含まれるコンテンツ）は当サイト（[やわらか実験室 - 動画をダウンロードするやつ](https://sites.google.com/view/yawaraka-labo/DougaDLG)）が自作したものです。永続的に残します。
 
 コマンドは下記バージョンのファイルを使います。これらファイルは同じ場所に置いておくと無難です。
 - [youtube-dl.exe](https://sites.google.com/view/yawaraka-labo/DougaDLG#h.p_h5NYPYa0_L2_) (version 2019.11.22)
