@@ -506,7 +506,29 @@ youtube-dl.exeにあらかじめ渡しておきたいデフォルトのオプシ
 🍅 オプション  
 <span style="color:#D73A49">`--skip-download`</span>  
 🍅 意味  
-処理は行う。但し動画のダウンロードはスキップする。結果的に何もダウンロードされない。  
+処理は行う。但し動画のダウンロードはスキップする。どういうときに使うか？ 例えば「サムネイル画像ファイルだけをダウンロードしたい」「字幕ファイルだけをダウンロードしたい」ときに使う。使用例を以下に記す。  
+</span>
+<br>
+
+><span style="color:black">__________________________________________________  
+🍅 使用例（サムネイル画像ファイルだけをダウンロードしたい）  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q --write-thumbnail --skip-download`</span>  
+🍅 結果  
+下記のファイルを取得。  
+<span style="color:green">サンプル動画 #1 日英字幕付き.jpg</span>  
+🍅 Note  
+オプション「`--skip-download`」を指定したので動画ファイルのダウンロードはスキップ（無視）されてサムネイル画像ファイルだけをダウンロードした。  
+</span>
+<br>
+
+><span style="color:black">__________________________________________________  
+🍅 使用例（字幕ファイルだけをダウンロードしたい）  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q --write-sub --sub-lang ja --skip-download`</span>  
+🍅 結果  
+下記のファイルを取得。  
+<span style="color:green">サンプル動画 #1 日英字幕付き.ja.vtt</span>  
+🍅 Note  
+オプション「`--skip-download`」を指定したので動画ファイルのダウンロードはスキップ（無視）されて字幕ファイルだけをダウンロードした。  
 </span>
 <br>
 
