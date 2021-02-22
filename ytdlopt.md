@@ -19,13 +19,13 @@ youtube-dl.exeに渡すオプションについて説明します。想定して
 コマンド発行の際は下記のサンプル動画と再生リストを使います。
 
 - サンプル動画 #1 日英字幕付き  
-[https://www.youtube.com/watch?v=RyIxykUGu9Q](https://www.youtube.com/watch?v=RyIxykUGu9Q)
+[https://www.youtube.com/watch?v=A4KVEsdDIp4](https://www.youtube.com/watch?v=A4KVEsdDIp4)
 - サンプル動画 #2 日のみ字幕付き  
-[https://www.youtube.com/watch?v=zI7GbQaB9U4](https://www.youtube.com/watch?v=zI7GbQaB9U4)
+[https://www.youtube.com/watch?v=X_wjxvkU2_k](https://www.youtube.com/watch?v=X_wjxvkU2_k)
 - サンプル動画 #3 字幕なし  
-[https://www.youtube.com/watch?v=ELD6rW5N1SU](https://www.youtube.com/watch?v=ELD6rW5N1SU)
+[https://www.youtube.com/watch?v=C_TdJ0oATnw](https://www.youtube.com/watch?v=C_TdJ0oATnw)
 - 再生リスト（上記三つの公開動画と一つの非公開動画で計四つの動画）  
-[https://www.youtube.com/playlist?list=PLDxMLtTVwpe4a7Add0eMKGjGP1oBK00Pw](https://www.youtube.com/playlist?list=PLDxMLtTVwpe4a7Add0eMKGjGP1oBK00Pw)
+[https://www.youtube.com/playlist?list=PLbxuddTkodA2YuIvQ626iAP1GDSjAERvN](https://www.youtube.com/playlist?list=PLbxuddTkodA2YuIvQ626iAP1GDSjAERvN)
 
 これらサンプル動画（および含まれるコンテンツ）は当サイト（[やわらか実験室 - 動画をダウンロードするやつ](https://sites.google.com/view/yawaraka-labo/DougaDLG)）が自作したものです。永続的に残します。
 
@@ -119,10 +119,10 @@ Alternatively, refer to the [developer instructions](#developer-instructions) fo
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（動画URLのみを指定してコマンド発行）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4`</span>  
 🍅 結果  
 下記のファイルを取得。  
-<span style="color:green">サンプル動画 #1 日英字幕付き-RyIxykUGu9Q.webm</span>  
+<span style="color:green">サンプル動画 #1 日英字幕付き-A4KVEsdDIp4.webm</span>  
 🍅 Note  
 ファイル名の命名規則に関するオプション「`-o`」を指定しないと既定で「`動画のタイトル-動画のID.動画の拡張子`」という形式のファイル名になる。  
 </span>
@@ -130,10 +130,10 @@ Alternatively, refer to the [developer instructions](#developer-instructions) fo
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（ファイル名の命名規則に関するオプションを指定）  
-<span style="color:#D73A49">`youtube-dl.exe -o "%(title)s｜%(id)s｜%(upload_date)s｜f%(format_id)s｜.%(ext)s" https://www.youtube.com/watch?v=RyIxykUGu9Q`</span>  
+<span style="color:#D73A49">`youtube-dl.exe -o "%(title)s｜%(id)s｜%(upload_date)s｜f%(format_id)s｜.%(ext)s" https://www.youtube.com/watch?v=A4KVEsdDIp4`</span>  
 🍅 結果  
 下記のファイルを取得。  
-<span style="color:green">サンプル動画 #1 日英字幕付き｜RyIxykUGu9Q｜20191123｜f248+251｜.webm</span>  
+<span style="color:green">サンプル動画 #1 日英字幕付き｜A4KVEsdDIp4｜20191123｜f248+251｜.webm</span>  
 🍅 Note  
 下記の命名規則でファイル名を付けた。  
 ・%(title)s 動画のタイトル  
@@ -147,7 +147,7 @@ Alternatively, refer to the [developer instructions](#developer-instructions) fo
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（オプションとURLの位置を左右逆にして指定）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -o "%(title)s｜f%(format_id)s｜.%(ext)s"`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -o "%(title)s｜f%(format_id)s｜.%(ext)s"`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">サンプル動画 #1 日英字幕付き｜f248+251｜.webm</span>  
@@ -184,7 +184,7 @@ Alternatively, refer to the [developer instructions](#developer-instructions) fo
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（再生リストの動画をまるごとダウンロード：失敗例）  
-<span style="color:#D73A49">`youtube-dl.exe -o "%(title)s.%(ext)s" https://www.youtube.com/playlist?list=PLDxMLtTVwpe4a7Add0eMKGjGP1oBK00Pw`</span>  
+<span style="color:#D73A49">`youtube-dl.exe -o "%(title)s.%(ext)s" https://www.youtube.com/playlist?list=PLbxuddTkodA2YuIvQ626iAP1GDSjAERvN`</span>  
 🍅 結果  
 下記のファイルのみを取得。  
 <span style="color:green">サンプル動画 #1 日英字幕付き.webm</span>  
@@ -197,7 +197,7 @@ Alternatively, refer to the [developer instructions](#developer-instructions) fo
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（再生リストの動画をまるごとダウンロード：成功例）  
-<span style="color:#D73A49">`youtube-dl.exe -o "%(title)s.%(ext)s" https://www.youtube.com/playlist?list=PLDxMLtTVwpe4a7Add0eMKGjGP1oBK00Pw -i`</span>  
+<span style="color:#D73A49">`youtube-dl.exe -o "%(title)s.%(ext)s" https://www.youtube.com/playlist?list=PLbxuddTkodA2YuIvQ626iAP1GDSjAERvN -i`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">サンプル動画 #1 日英字幕付き.webm</span>  
@@ -419,9 +419,9 @@ youtube-dl.exeにあらかじめ渡しておきたいデフォルトのオプシ
 <span style="color:#D73A49">`--batch-file FILE`</span>  
 🍅 意味  
 ダウンロードする動画のURLを記述したファイルを指定する。1行に1つのURLを記述する。行の先頭が「`#`」「`;`」「`]`」の文字で始まる場合はその行はコメントと見なされダウンロードされない。以下は記入例。  
-<span style="color:#D73A49">`https://www.youtube.com/watch?v=RyIxykUGu9Q`</span>  
-<span style="color:#D73A49">`# https://www.youtube.com/watch?v=zI7GbQaB9U4`</span>  
-<span style="color:#D73A49">`https://www.youtube.com/watch?v=ELD6rW5N1SU`</span>  
+<span style="color:#D73A49">`https://www.youtube.com/watch?v=A4KVEsdDIp4`</span>  
+<span style="color:#D73A49">`# https://www.youtube.com/watch?v=X_wjxvkU2_k`</span>  
+<span style="color:#D73A49">`https://www.youtube.com/watch?v=C_TdJ0oATnw`</span>  
 </span>
 <br>
 
@@ -512,7 +512,7 @@ youtube-dl.exeにあらかじめ渡しておきたいデフォルトのオプシ
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（サムネイル画像ファイルだけをダウンロードしたい）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q --write-thumbnail --skip-download`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 --write-thumbnail --skip-download`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">サンプル動画 #1 日英字幕付き.jpg</span>  
@@ -523,7 +523,7 @@ youtube-dl.exeにあらかじめ渡しておきたいデフォルトのオプシ
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（字幕ファイルだけをダウンロードしたい）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q --write-sub --sub-lang ja --skip-download`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 --write-sub --sub-lang ja --skip-download`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">サンプル動画 #1 日英字幕付き.ja.vtt</span>  
@@ -632,7 +632,7 @@ youtube-dl.exe実行時にさまざまな有益な情報を表示する。ダウ
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（利用可能な形式の動画をすべてダウンロード）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -o "f%(format_id)s.%(ext)s" --all-formats`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -o "f%(format_id)s.%(ext)s" --all-formats`</span>  
 🍅 結果  
 下記の形式のファイルを取得。  
 <span style="color:green">f278.webm</span>  
@@ -674,10 +674,10 @@ youtube-dl.exe実行時にさまざまな有益な情報を表示する。ダウ
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（利用可能な形式を一覧表示）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -F`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -F`</span>  
 🍅 結果  
 下記の内容を表示。  
-[info] Available formats for RyIxykUGu9Q:  
+[info] Available formats for A4KVEsdDIp4:  
 format code extension resolution note  
 139 m4a audio only DASH audio 49k（略）mp4a（略）  
 140 m4a audio only DASH audio 130k（略）mp4a（略）  
@@ -708,7 +708,7 @@ YouTube動画には映像と音声が一つのファイルにまとまってる�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（映像と音声が単一ファイルのもの）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -v -o "%(title)s｜%(format)s.%(ext)s" -f 22`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -v -o "%(title)s｜%(format)s.%(ext)s" -f 22`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">サンプル動画 #1 日英字幕付き｜22 - 1280x720 (720p).mp4</span>  
@@ -721,7 +721,7 @@ YouTube動画には映像と音声が一つのファイルにまとまってる�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（DASH映像のみ）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -v -o "%(title)s｜%(format)s.%(ext)s" -f 137`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -v -o "%(title)s｜%(format)s.%(ext)s" -f 137`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">サンプル動画 #1 日英字幕付き｜137 - 1920x1080 (DASH video).mp4</span>  
@@ -734,7 +734,7 @@ YouTube動画には映像と音声が一つのファイルにまとまってる�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（DASH音声のみ）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -v -o "%(title)s｜%(format)s.%(ext)s" -f 140`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -v -o "%(title)s｜%(format)s.%(ext)s" -f 140`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">サンプル動画 #1 日英字幕付き｜140 - audio only (DASH audio).m4a</span>  
@@ -748,7 +748,7 @@ YouTube動画には映像と音声が一つのファイルにまとまってる�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（DASH映像とDASH音声の合成）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -v -o "%(title)s｜%(format)s.%(ext)s" -f "bestvideo+bestaudio"`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -v -o "%(title)s｜%(format)s.%(ext)s" -f "bestvideo+bestaudio"`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">サンプル動画 #1 日英字幕付き｜248 - 1920x1080 (DASH video)+251 - audio only (DASH audio).webm</span>  
@@ -765,7 +765,7 @@ YouTube動画には映像と音声が一つのファイルにまとまってる�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（映像と音声が単一ファイルのもの）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -v -o "%(title)s｜%(format)s.%(ext)s" -f "best`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -v -o "%(title)s｜%(format)s.%(ext)s" -f "best`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">サンプル動画 #1 日英字幕付き｜22 - 1280x720 (720p).mp4</span>  
@@ -813,13 +813,13 @@ YouTube動画には映像と音声が一つのファイルにまとまってる�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（字幕ファイルをダウンロード：言語指定なし）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q --write-sub`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 --write-sub`</span>  
 🍅 Note  
 ダウンロードする動画の仕様：既定の言語=日本語、利用可能な字幕=日本語（ja）と英語（en）。  
 🍅 結果  
 下記のファイルを取得。  
-<span style="color:green">サンプル動画 #1 日英字幕付き-RyIxykUGu9Q.webm</span>  
-<span style="color:green">サンプル動画 #1 日英字幕付き-RyIxykUGu9Q.en.vtt</span>  
+<span style="color:green">サンプル動画 #1 日英字幕付き-A4KVEsdDIp4.webm</span>  
+<span style="color:green">サンプル動画 #1 日英字幕付き-A4KVEsdDIp4.en.vtt</span>  
 🍅 Note  
 期待に反する結果となった。なぜか英語（en）の字幕だけがダウンロードされている。もしかしたらオプション「`--write-sub`」だけを指定すると利用可能な字幕のうち言語記号（二文字）の英字表記が昇順で若い言語の字幕ファイルが対象になるのかもしれない。つまり「`j`」よりも若い「`e`」の英語字幕ファイルが選ばれる？  
 </span>
@@ -827,13 +827,13 @@ YouTube動画には映像と音声が一つのファイルにまとまってる�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（字幕ファイルをダウンロード：言語=ja）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q --write-sub --sub-lang ja`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 --write-sub --sub-lang ja`</span>  
 🍅 Note  
 ダウンロードする動画の仕様：既定の言語=日本語、利用可能な字幕=日本語（ja）と英語（en）。  
 🍅 結果  
 下記のファイルを取得。  
-<span style="color:green">サンプル動画 #1 日英字幕付き-RyIxykUGu9Q.webm</span>  
-<span style="color:green">サンプル動画 #1 日英字幕付き-RyIxykUGu9Q.ja.vtt</span>  
+<span style="color:green">サンプル動画 #1 日英字幕付き-A4KVEsdDIp4.webm</span>  
+<span style="color:green">サンプル動画 #1 日英字幕付き-A4KVEsdDIp4.ja.vtt</span>  
 🍅 Note  
 期待通りの結果となった。オプション「`--sub-lang ja`」を併用したら日本語字幕（ja）を取得できた。取得したい言語が明確なら「`--sub-lang`」で指定しておくと無難。  
 </span>
@@ -841,14 +841,14 @@ YouTube動画には映像と音声が一つのファイルにまとまってる�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（字幕ファイルをダウンロード：言語=ja,en）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q --write-sub --sub-lang ja,en`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 --write-sub --sub-lang ja,en`</span>  
 🍅 Note  
 ダウンロードする動画の仕様：既定の言語=日本語、利用可能な字幕=日本語（ja）と英語（en）。  
 🍅 結果  
 下記のファイルを取得。  
-<span style="color:green">サンプル動画 #1 日英字幕付き-RyIxykUGu9Q.webm</span>  
-<span style="color:green">サンプル動画 #1 日英字幕付き-RyIxykUGu9Q.en.vtt</span>  
-<span style="color:green">サンプル動画 #1 日英字幕付き-RyIxykUGu9Q.ja.vtt</span>  
+<span style="color:green">サンプル動画 #1 日英字幕付き-A4KVEsdDIp4.webm</span>  
+<span style="color:green">サンプル動画 #1 日英字幕付き-A4KVEsdDIp4.en.vtt</span>  
+<span style="color:green">サンプル動画 #1 日英字幕付き-A4KVEsdDIp4.ja.vtt</span>  
 🍅 Note  
 こちらも期待通りの結果となった。オプション「`--sub-lang ja,en`」で取得したい言語をカンマで区切ると複数指定できるようだ。  
 </span>
@@ -856,13 +856,13 @@ YouTube動画には映像と音声が一つのファイルにまとまってる�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（字幕ファイルをダウンロード：言語=ja、形式=ttml）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q --write-sub --sub-lang ja --sub-format ttml`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 --write-sub --sub-lang ja --sub-format ttml`</span>  
 🍅 Note  
 ダウンロードする動画の仕様：既定の言語=日本語、利用可能な字幕=日本語（ja）と英語（en）。  
 🍅 結果  
 下記のファイルを取得。  
-<span style="color:green">サンプル動画 #1 日英字幕付き-RyIxykUGu9Q.webm</span>  
-<span style="color:green">サンプル動画 #1 日英字幕付き-RyIxykUGu9Q.ja.ttml</span>  
+<span style="color:green">サンプル動画 #1 日英字幕付き-A4KVEsdDIp4.webm</span>  
+<span style="color:green">サンプル動画 #1 日英字幕付き-A4KVEsdDIp4.ja.ttml</span>  
 🍅 Note  
 期待通りの結果となった。「`.ttml`」の字幕を取得できた。  
 </span>
@@ -870,13 +870,13 @@ YouTube動画には映像と音声が一つのファイルにまとまってる�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（字幕ファイルをダウンロード：言語=ja、形式=srt）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q --write-sub --sub-lang ja --sub-format srt`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 --write-sub --sub-lang ja --sub-format srt`</span>  
 🍅 Note  
 ダウンロードする動画の仕様：既定の言語=日本語、利用可能な字幕=日本語（ja）と英語（en）。  
 🍅 結果  
 下記のファイルを取得。  
-<span style="color:green">サンプル動画 #1 日英字幕付き-RyIxykUGu9Q.webm</span>  
-<span style="color:green">サンプル動画 #1 日英字幕付き-RyIxykUGu9Q.ja.vtt</span>  
+<span style="color:green">サンプル動画 #1 日英字幕付き-A4KVEsdDIp4.webm</span>  
+<span style="color:green">サンプル動画 #1 日英字幕付き-A4KVEsdDIp4.ja.vtt</span>  
 🍅 ログ  
 <span>WARNING: No subtitle format found matching "srt" for language ja, using vtt【警告：言語jaの「`srt`」に一致する字幕形式が見つかりません。vttを使用します】</span>  
 🍅 Note  
@@ -886,13 +886,13 @@ YouTube動画には映像と音声が一つのファイルにまとまってる�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（字幕ファイルをダウンロード：言語=ja、形式=srtに変換する）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q --write-sub --sub-lang ja --convert-subs srt`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 --write-sub --sub-lang ja --convert-subs srt`</span>  
 🍅 Note  
 ダウンロードする動画の仕様：既定の言語=日本語、利用可能な字幕=日本語（ja）と英語（en）。  
 🍅 結果  
 下記のファイルを取得。  
-<span style="color:green">サンプル動画 #1 日英字幕付き-RyIxykUGu9Q.webm</span>  
-<span style="color:green">サンプル動画 #1 日英字幕付き-RyIxykUGu9Q.ja.srt</span>  
+<span style="color:green">サンプル動画 #1 日英字幕付き-A4KVEsdDIp4.webm</span>  
+<span style="color:green">サンプル動画 #1 日英字幕付き-A4KVEsdDIp4.ja.srt</span>  
 🍅 ログ  
 <span>[ffmpeg] Converting subtitles【字幕を変換】</span>  
 🍅 Note  
@@ -914,13 +914,13 @@ YouTube動画には映像と音声が一つのファイルにまとまってる�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（自動翻訳された字幕ファイルをダウンロード：言語指定なし）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=zI7GbQaB9U4 --write-auto-sub`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=X_wjxvkU2_k --write-auto-sub`</span>  
 🍅 Note  
 ダウンロードする動画の仕様：既定の言語=日本語、利用可能な字幕=日本語（ja）のみ。  
 🍅 結果  
 下記のファイルを取得。  
-<span style="color:green">サンプル動画 #2 日のみ字幕付き-zI7GbQaB9U4.mkv</span>  
-<span style="color:green">サンプル動画 #2 日のみ字幕付き-zI7GbQaB9U4.en.vtt</span>  
+<span style="color:green">サンプル動画 #2 日のみ字幕付き-X_wjxvkU2_k.mkv</span>  
+<span style="color:green">サンプル動画 #2 日のみ字幕付き-X_wjxvkU2_k.en.vtt</span>  
 🍅 ログ  
 <span>WARNING: Requested formats are incompatible for merge and will be merged into mkv.【警告：mkvにマージされます】</span>  
 🍅 Note  
@@ -930,13 +930,13 @@ YouTube動画には映像と音声が一つのファイルにまとまってる�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（自動翻訳された字幕ファイルをダウンロード：言語=fr）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=zI7GbQaB9U4 --write-auto-sub --sub-lang fr`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=X_wjxvkU2_k --write-auto-sub --sub-lang fr`</span>  
 🍅 Note  
 ダウンロードする動画の仕様：既定の言語=日本語、利用可能な字幕=日本語（ja）のみ。  
 🍅 結果  
 下記のファイルを取得。  
-<span style="color:green">サンプル動画 #2 日のみ字幕付き-zI7GbQaB9U4.mkv</span>  
-<span style="color:green">サンプル動画 #2 日のみ字幕付き-zI7GbQaB9U4.fr.vtt</span>  
+<span style="color:green">サンプル動画 #2 日のみ字幕付き-X_wjxvkU2_k.mkv</span>  
+<span style="color:green">サンプル動画 #2 日のみ字幕付き-X_wjxvkU2_k.fr.vtt</span>  
 🍅 ログ  
 <span>WARNING: Requested formats are incompatible for merge and will be merged into mkv.【警告：mkvにマージされます】</span>  
 🍅 Note  
@@ -956,13 +956,13 @@ YouTube動画には映像と音声が一つのファイルにまとまってる�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（利用可能な字幕ファイルをすべてダウンロード）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q --all-subs`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 --all-subs`</span>  
 🍅 Note  
 ダウンロードする動画の仕様：既定の言語=日本語、利用可能な字幕=日本語（ja）と英語（en）。  
 🍅 結果  
-<span style="color:green">サンプル動画 #1 日英字幕付き-RyIxykUGu9Q.webm</span>  
-<span style="color:green">サンプル動画 #1 日英字幕付き-RyIxykUGu9Q.en.vtt</span>  
-<span style="color:green">サンプル動画 #1 日英字幕付き-RyIxykUGu9Q.ja.vtt</span>  
+<span style="color:green">サンプル動画 #1 日英字幕付き-A4KVEsdDIp4.webm</span>  
+<span style="color:green">サンプル動画 #1 日英字幕付き-A4KVEsdDIp4.en.vtt</span>  
+<span style="color:green">サンプル動画 #1 日英字幕付き-A4KVEsdDIp4.ja.vtt</span>  
 🍅 Note  
 期待通りの結果となった。  
 </span>
@@ -981,12 +981,12 @@ YouTube動画には映像と音声が一つのファイルにまとまってる�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（利用可能な字幕ファイルの一覧を表示）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q --list-subs`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 --list-subs`</span>  
 🍅 Note  
 ダウンロードする動画の仕様：既定の言語=日本語、利用可能な字幕=日本語（ja）と英語（en）。  
 🍅 結果  
 下記の内容を表示。  
-Available subtitles for RyIxykUGu9Q:  
+Available subtitles for A4KVEsdDIp4:  
 Language formats  
 en vtt, ttml, srv3, srv2, srv1  
 ja vtt, ttml, srv3, srv2, srv1  
@@ -1072,7 +1072,7 @@ ja vtt, ttml, srv3, srv2, srv1
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（音声ファイルを取得：音声形式=指定なし）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -v -o "%(title)s｜f%(format_id)s｜.%(ext)s" -x`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -v -o "%(title)s｜f%(format_id)s｜.%(ext)s" -x`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">サンプル動画 #1 日英字幕付き｜f251｜.opus</span>  
@@ -1094,7 +1094,7 @@ opusオリジナル音声を抽出しているため再エンコードによる�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（音声ファイルを取得：音声形式=best）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -v -o "%(title)s｜f%(format_id)s｜.%(ext)s" -x --audio-format best`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -v -o "%(title)s｜f%(format_id)s｜.%(ext)s" -x --audio-format best`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">サンプル動画 #1 日英字幕付き｜f251｜.opus</span>  
@@ -1107,7 +1107,7 @@ opusオリジナル音声を抽出しているため再エンコードによる�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（音声ファイルを取得：音声形式=m4a）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -v -o "%(title)s｜f%(format_id)s｜.%(ext)s" -x --audio-format m4a`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -v -o "%(title)s｜f%(format_id)s｜.%(ext)s" -x --audio-format m4a`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">サンプル動画 #1 日英字幕付き｜f251｜.m4a</span>  
@@ -1129,7 +1129,7 @@ opusオリジナル音声から別の音声形式に変換（再エンコード�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（音声ファイルを取得：音声形式=mp3）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -v -o "%(title)s｜f%(format_id)s｜.%(ext)s" -x --audio-format mp3`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -v -o "%(title)s｜f%(format_id)s｜.%(ext)s" -x --audio-format mp3`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">サンプル動画 #1 日英字幕付き｜f251｜.mp3</span>  
@@ -1154,7 +1154,7 @@ opusオリジナル音声から別の音声形式に変換（再エンコード�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（音声ファイルを取得：音声形式=mp3、音質=最高）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -v -o "%(title)s｜f%(format_id)s｜.%(ext)s" -x --audio-format mp3 --audio-quality 0`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -v -o "%(title)s｜f%(format_id)s｜.%(ext)s" -x --audio-format mp3 --audio-quality 0`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">サンプル動画 #1 日英字幕付き｜f251｜.mp3</span>  
@@ -1177,7 +1177,7 @@ opusオリジナル音声から別の音声形式に変換（再エンコード�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（音声ファイルを取得：音声形式=mp3、音質=最低）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -v -o "%(title)s｜f%(format_id)s｜.%(ext)s" -x --audio-format mp3 --audio-quality 9`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -v -o "%(title)s｜f%(format_id)s｜.%(ext)s" -x --audio-format mp3 --audio-quality 9`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">サンプル動画 #1 日英字幕付き｜f251｜.mp3</span>  
@@ -1244,7 +1244,7 @@ opusオリジナル音声から別の音声形式に変換（再エンコード�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（ダウンロードした動画ファイルをflv形式に変換）  
-<span style="color:#D73A49">`youtube-dl.exe -v -o "%(title)s｜f%(format_id)s｜.%(ext)s" https://www.youtube.com/watch?v=RyIxykUGu9Q --recode-video flv`</span>  
+<span style="color:#D73A49">`youtube-dl.exe -v -o "%(title)s｜f%(format_id)s｜.%(ext)s" https://www.youtube.com/watch?v=A4KVEsdDIp4 --recode-video flv`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">サンプル動画 #1 日英字幕付き｜f248+251｜.flv</span>  
@@ -1285,12 +1285,12 @@ opusオリジナル音声から別の音声形式に変換（再エンコード�
 
 ><span style="color:black">__________________________________________________  
 🍅 使用例（字幕ファイルを埋め込んだ動画をダウンロード）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q --write-sub --sub-lang ja --embed-subs`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 --write-sub --sub-lang ja --embed-subs`</span>  
 🍅 Note  
 ダウンロードする動画の仕様：既定の言語=日本語、利用可能な字幕=日本語（ja）と英語（en）。  
 🍅 結果  
 下記のファイルを取得。  
-<span style="color:green">サンプル動画 #1 日英字幕付き-RyIxykUGu9Q.webm</span>  
+<span style="color:green">サンプル動画 #1 日英字幕付き-A4KVEsdDIp4.webm</span>  
 （動画コンテナに日本語字幕が埋め込まれている）  
 </span>
 <br>
@@ -1425,12 +1425,12 @@ The basic usage is not to set any template arguments when downloading a single f
 🍅 id (string)  
 動画のID（文字列）  
 🍅 使用例（id）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -o "%(id)s"`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -o "%(id)s"`</span>  
 🍅 結果  
 下記のファイルを取得。  
-<span style="color:green">RyIxykUGu9Q.webm</span>  
+<span style="color:green">A4KVEsdDIp4.webm</span>  
 🍅 Note  
-「`RyIxykUGu9Q`」は動画URLに含まれる固有のID。  
+「`A4KVEsdDIp4`」は動画URLに含まれる固有のID。  
 🍅 Note  
 ファイルの拡張子「`.webm`」は自動で付加された。拡張子をあえて指定しなくても自動で付けてくれるらしい。  
 </span>
@@ -1442,7 +1442,7 @@ The basic usage is not to set any template arguments when downloading a single f
 🍅 title (string)  
 動画のタイトル（文字列）  
 🍅 使用例（title）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -o "%(title)s"`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -o "%(title)s"`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">サンプル動画 #1 日英字幕付き.webm</span>  
@@ -1456,7 +1456,7 @@ The basic usage is not to set any template arguments when downloading a single f
 🍅 ext (string)  
 動画ファイルの拡張子（文字列）  
 🍅 使用例（ext）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -o "%(ext)s"`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -o "%(ext)s"`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">webm.webm</span>  
@@ -1476,7 +1476,7 @@ The basic usage is not to set any template arguments when downloading a single f
 🍅 upload_date(string)  
 動画が更新された年月日（文字列）  
 🍅 使用例（upload_date）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -o "%(upload_date)s"`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -o "%(upload_date)s"`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">20191123.webm</span>  
@@ -1506,7 +1506,7 @@ The basic usage is not to set any template arguments when downloading a single f
 🍅 format(string)  
 動画形式の説明文（文字列）  
 🍅 使用例（format）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -o "%(format)s"`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -o "%(format)s"`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">248 - 1920x1080 (DASH video)+251 - audio only (DASH audio).webm</span>  
@@ -1520,7 +1520,7 @@ The basic usage is not to set any template arguments when downloading a single f
 🍅 format_id(string)  
 動画形式のID（文字列）  
 🍅 使用例（format_id）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -o "%(format_id)s"`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -o "%(format_id)s"`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">248+251.webm</span>  
@@ -1533,7 +1533,7 @@ The basic usage is not to set any template arguments when downloading a single f
 🍅 format_note(string)  
 動画形式の追加情報（文字列）  
 🍅 使用例（format_note）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -o "%(format_note)s"`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -o "%(format_note)s"`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">NA.webm</span>  
@@ -1548,7 +1548,7 @@ The basic usage is not to set any template arguments when downloading a single f
 🍅 width(numeric)  
 映像の横幅（数値）  
 🍅 使用例（width）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -o "%(width)s"`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -o "%(width)s"`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">1920.webm</span>  
@@ -1561,7 +1561,7 @@ The basic usage is not to set any template arguments when downloading a single f
 🍅 height(numeric)  
 映像の縦高さ（数値）  
 🍅 使用例（height）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -o "%(height)s"`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -o "%(height)s"`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">1080.webm</span>  
@@ -1574,7 +1574,7 @@ The basic usage is not to set any template arguments when downloading a single f
 🍅 resolution(string)  
 映像の横幅と縦高さの説明文（文字列）  
 🍅 使用例（resolution）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -o "%(resolution)s"`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -o "%(resolution)s"`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">1920x1080.webm</span>  
@@ -1591,7 +1591,7 @@ The basic usage is not to set any template arguments when downloading a single f
 🍅 abr(numeric)  
 音声の平均ビットレート KBit/s（数値）  
 🍅 使用例（abr）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -o "%(abr)s"`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -o "%(abr)s"`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">160.webm</span>  
@@ -1606,7 +1606,7 @@ The basic usage is not to set any template arguments when downloading a single f
 🍅 acodec(string)  
 音声コーデックの名称（文字列）  
 🍅 使用例（acodec）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -o "%(acodec)s"`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -o "%(acodec)s"`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">opus.webm</span>  
@@ -1625,7 +1625,7 @@ The basic usage is not to set any template arguments when downloading a single f
 🍅 fps(numeric)  
 映像のフレームレート（数値）  
 🍅 使用例（fps）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -o "%(fps)s"`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -o "%(fps)s"`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">30.webm</span>  
@@ -1640,7 +1640,7 @@ The basic usage is not to set any template arguments when downloading a single f
 🍅 vcodec(string)  
 映像コーデックの名称（文字列）  
 🍅 使用例（vcodec）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -o "%(vcodec)s"`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -o "%(vcodec)s"`</span>  
 🍅 結果  
 下記のファイルを取得。  
 <span style="color:green">vp9.webm</span>  
@@ -2239,7 +2239,7 @@ Use the `-o` to specify an [output template](#output-template), for example `-o 
 🍅 「`-o`」でフォルダのパスを指定してください。  
 「`-o "C:\my_work_folder\%(title)s.%(ext)s"`」のように。  
 🍅 使用例（特定のフォルダにファイルをダウンロード）  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=RyIxykUGu9Q -o "C:\my_work_folder\%(title)s.%(ext)s"`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/watch?v=A4KVEsdDIp4 -o "C:\my_work_folder\%(title)s.%(ext)s"`</span>  
 🍅 結果  
 「`C:\my_work_folder`」に下記のファイルを取得。  
 <span style="color:green">サンプル動画 #1 日英字幕付き.webm</span>  
@@ -2297,21 +2297,21 @@ Use download-archive feature. With this feature you should initially download th
 ><span style="color:black">__________________________________________________  
 🍅 使用例（再生リストから新しい動画のみをダウンロード）  
 ▼初回：  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/playlist?list=PLDxMLtTVwpe4a7Add0eMKGjGP1oBK00Pw -i --download-archive ダウンロード済IDを記録.txt`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/playlist?list=PLbxuddTkodA2YuIvQ626iAP1GDSjAERvN -i --download-archive ダウンロード済IDを記録.txt`</span>  
 ▼二回目（初回とまったく同じコマンド）：  
-<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/playlist?list=PLDxMLtTVwpe4a7Add0eMKGjGP1oBK00Pw -i --download-archive ダウンロード済IDを記録.txt`</span>  
+<span style="color:#D73A49">`youtube-dl.exe https://www.youtube.com/playlist?list=PLbxuddTkodA2YuIvQ626iAP1GDSjAERvN -i --download-archive ダウンロード済IDを記録.txt`</span>  
 🍅 結果  
 ▼初回：下記のファイルを取得。  
-<span style="color:green">サンプル動画 #1 日英字幕付き-RyIxykUGu9Q.webm</span>  
-<span style="color:green">サンプル動画 #2 日のみ字幕付き-zI7GbQaB9U4.mkv</span>  
-<span style="color:green">サンプル動画 #3 字幕なし-ELD6rW5N1SU.mkv</span>  
+<span style="color:green">サンプル動画 #1 日英字幕付き-A4KVEsdDIp4.webm</span>  
+<span style="color:green">サンプル動画 #2 日のみ字幕付き-X_wjxvkU2_k.mkv</span>  
+<span style="color:green">サンプル動画 #3 字幕なし-C_TdJ0oATnw.mkv</span>  
 <span style="color:green">ダウンロード済IDを記録.txt</span>  
 ▼二回目：既に取得済みの動画（「`ダウンロード済IDを記録.txt`」に記録済みの動画）は再取得しない。  
 🍅 Note  
 初回のコマンド発行後に「`ダウンロード済IDを記録.txt`」が自動的に生成され次の内容が書き込まれる。  
-youtube RyIxykUGu9Q  
-youtube zI7GbQaB9U4  
-youtube ELD6rW5N1SU  
+youtube A4KVEsdDIp4  
+youtube X_wjxvkU2_k  
+youtube C_TdJ0oATnw  
 </span>
 <br>
 
